@@ -1,5 +1,5 @@
 
-**Beta Testing 2/15/21**
+**Beta Testing 2/15/21 - Note, works on Windows 10**
 
 1. Download: http://13.89.107.42/trilogy.zip
 2. Extract folder. Launch eqemupatcher.exe
@@ -14,6 +14,7 @@
 
 ### Known Issues
 
+- Some resolution issues when running eqgame through patchme rather than EQW.
 - NPCs will not spawn without the map files being present in the /maps/maps folder.
 - NPCs will not roam unless specified in the database their roam range, and nodes placed in game.
 - Players will have to use EQW.exe to connect. The patchme suffix will get you disconnected.
