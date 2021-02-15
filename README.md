@@ -1,4 +1,3 @@
-EQClassic source code from January 1st, 2010 - For EverQuest Trilogy (big box)
 
 **Beta Testing 2/15/21**
 
