@@ -1,11 +1,17 @@
 EQClassic source code from January 1st, 2010 - For EverQuest Trilogy (big box)
 
+**Beta Testing 2/15/21**
+
+1. Download: http://13.89.107.42/trilogy.zip
+2. Extract folder. Launch eqemupatcher.exe
+3. Once the patch is complete, do not hit play. Close out the patcher. In your newly created EQ directory, launch eqw.
+4. Ping me for a login account via Discord link below. (Soon, we will have online creation, similar to EQ Emu.)
+
 **Online Documention:** http://erfg12.github.io/EQClassic/
 
 ### Support
 
-- Open an issue ticket
-- Join our Discord https://discord.gg/ddhGacy
+-Discord: https://discord.gg/UHsDZ9dMz2
 
 ### Known Issues
 
