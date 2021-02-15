@@ -6,7 +6,7 @@
 3. Once the patch is complete, do not hit play. Close out the patcher. In your newly created EQ directory, launch eqw.
 4. Ping me for a login account via Discord link below. (Soon, we will have online creation, similar to EQ Emu.)
 
-**Online Documention:** http://erfg12.github.io/EQClassic/
+**Online Documention (Create your own server with current source):** http://erfg12.github.io/EQClassic/
 
 ### Support
 
