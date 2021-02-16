@@ -1,5 +1,5 @@
 
-**Beta Testing 2/15/21 - Note, works on Windows 10**
+**Beta Testing Updated 2/15/21 - Note, works on Windows 10**
 
 1. Download: http://13.89.107.42/trilogy.zip
 2. Extract folder. Launch eqemupatcher.exe
