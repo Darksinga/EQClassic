@@ -1,1 +1,2 @@
 
+Add php files to web server. Make sure you create a remote user from your web based IP that has the necessary permissions. This will allow users to create their own accounts, and change password.
