@@ -1,5 +1,5 @@
 // ***************************************************************
-//  EQCException   ·  date: 21/12/2007
+//  EQCException   ï¿½  date: 21/12/2007
 //  -------------------------------------------------------------
 //  Copyright (C) 2007 - All Rights Reserved
 // ***************************************************************
@@ -421,22 +421,28 @@ int8 Database::CheckStatus(int32 account_id)
 	return 0;
 }
 
-bool Database::CreateAccount(char* name, char* password, int8 status, int32 lsaccount_id)
+//bool Database::CreateAccount(char* name, char* password, int8 status, int32 lsaccount_id)
+bool Database::CreateAccount(int32 lsaccount_id)
 {
 	char errbuf[MYSQL_ERRMSG_SIZE];
     char *query = 0;
+	char* query2 = 0;
 	bool bret = false;
+	MYSQL_RES* result;
+	MYSQL_ROW row;
 
-	if (RunQuery(query, MakeAnyLenString(&query, "INSERT INTO account SET name='%s', password='%s', status=%i, lsaccount_id=%i;",name,password,status, lsaccount_id), errbuf))
+	//jimm0thy - added to fix account creation
+	//if (RunQuery(query, MakeAnyLenString(&query, "INSERT INTO account SET name='%s', password='%s', status=%i, lsaccount_id=%i;",name,password,status, lsaccount_id), errbuf))
+	if (RunQuery(query2, MakeAnyLenString(&query2, "INSERT INTO account SET name=(select name from login_accounts where id=%i), password=(select password from login_accounts where id=%i), status=%i, lsaccount_id=%i;", lsaccount_id, lsaccount_id, 1, lsaccount_id), errbuf))
 	{
 		bret = true;
 	}
 	else
 	{
-		cerr << "Error in CreateAccount query '" << query << "' " << errbuf << endl;
+		cerr << "Error in CreateAccount query '" << query2 << "' " << errbuf << endl;
 		bret = false;
 	}
-	safe_delete_array(query);//delete[] query;
+	safe_delete_array(query2);//delete[] query;
 	
 	return bret; // Dark-Prince : 25/20/2007 : single return point
 }
