@@ -14,14 +14,17 @@
 
 ### Known Issues
 
-- Some resolution issues when running eqgame through patchme rather than EQW.
+- Game doesn't run properly using eqgame, EQW is currently required and is in a small window.
 - NPCs will not spawn without the map files being present in the /maps/maps folder.
 - NPCs will not roam unless specified in the database their roam range, and nodes placed in game.
-- Players will have to use EQW.exe to connect. The patchme suffix will get you disconnected.
 - Bards cannot cast items while moving.
 - Some zone related crashes.
 - Network updates need work. Slight delay on other players movement.
 
 ### Screenshots
 
-![](https://newagesoldier.com/EQClassic/image0.jpg)
+![](http://rotpvp.com/trilogy/trilogy2.png)
+![](http://rotpvp.com/trilogy/trilogy3.png)
+![](http://rotpvp.com/trilogy/trilogy4.png)
+![](http://rotpvp.com/trilogy/trilogy5.png)
+![](http://rotpvp.com/trilogy/trilogy6.png)
